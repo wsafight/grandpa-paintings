@@ -12,4 +12,5 @@ export default defineConfig({
         sitemap(),
     ],
     output: 'static',
+    compressHTML: true
 });
