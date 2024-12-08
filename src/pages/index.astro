@@ -17,6 +17,8 @@ import Layout from "../layouts/Layout.astro";
 // import image12 from "../assets/images/image12.jpg";
 // import image13 from "../assets/images/image13.jpg";
 // import image14 from "../assets/images/image14.jpg";
+
+const imgPrefix = '/grandpa-paintings';
 ---
 
 
@@ -74,44 +76,44 @@ import Layout from "../layouts/Layout.astro";
 
       <h2 class="space">荣誉证书</h2>
       <div class="row">
-        <img src="/certificate-of-honor/image.jpeg" alt="author"  loading="lazy" decoding="async" />
+        <img src={`${imgPrefix}/certificate-of-honor/image.jpeg`}alt="author"  loading="lazy" decoding="async" />
       </div>
 
       <h2 class="space">作品</h2>
       <div class="row">
         <div class="col-md-3">
-          <img src="/images/image1.jpg" alt="author"  loading="lazy" decoding="async" />
+          <img src={`${imgPrefix}/images/image1.jpg`} alt="author"  loading="lazy" decoding="async" />
         </div>
         <div class="col-md-3">
-          <img src="/images/image2.jpg" alt="author"  loading="lazy" decoding="async" />
+          <img src={`${imgPrefix}/images/image2.jpg`} alt="author"  loading="lazy" decoding="async" />
         </div>
         <div class="col-md-3">
-          <img src="/images/image3.jpg" alt="author"  loading="lazy" decoding="async" />
+          <img src={`${imgPrefix}/images/image3.jpg`} alt="author"  loading="lazy" decoding="async" />
           <!-- <Image src={image3} alt="author" /> -->
         </div>
         <div class="col-md-3">
-          <img src="/images/image4.jpg" alt="author"  loading="lazy" decoding="async" />
+          <img src={`${imgPrefix}/images/image4.jpg`} alt="author"  loading="lazy" decoding="async" />
           <!-- <Image src={image4} alt="author" /> -->
         </div>
       </div>
       <div class="row space">
         <div class="col-md-6">
-          <img src="/images/image11.jpg" alt="author"  loading="lazy" decoding="async" />
+          <img src={`${imgPrefix}/images/image11.jpg`} alt="author"  loading="lazy" decoding="async" />
           <!-- <Image src={image11} alt="author" /> -->
         </div>
         <div class="col-md-6">
-          <img src="/images/image12.jpg" alt="author"  loading="lazy" decoding="async" />
+          <img src={`${imgPrefix}/images/image12.jpg`} alt="author"  loading="lazy" decoding="async" />
           <!-- <Image src={image12} alt="author" /> -->
         </div>
       </div>
 
       <div class="row space">
         <div class="col-md-6">
-          <img src="/images/image13.jpg" alt="author"  loading="lazy" decoding="async" />
+          <img src={`${imgPrefix}/images/image13.jpg`} alt="author"  loading="lazy" decoding="async" />
           <!-- <Image src={image13} alt="author" /> -->
         </div>
         <div class="col-md-6">
-          <img src="/images/image14.jpg" alt="author"  loading="lazy" decoding="async" />
+          <img src={`${imgPrefix}/images/image14.jpg`} alt="author"  loading="lazy" decoding="async" />
           <!-- <Image src={image14} alt="author" /> -->
         </div>
       </div>
