@@ -24,10 +24,22 @@ for (const currentPath of dir) {
     }
     const imgAbsolutePath = join(absolutePath, imgPath);
 
-    sharp(imgAbsolutePath)
-      .webp()
-      .toFile(join(absolutePath, `${imgPath.split(".")[0]}.webp`));
-  }
+    const webp = sharp(imgAbsolutePath).webp()
+    const imgName = imgPath.split(".")[0]
 
-  // console.log(imgDir)
+    // 目前先这样处理
+    if (absolutePath.includes('certificate-of-honor')) {
+      webp.resize(1296)
+    } else if (absolutePath.includes('author')) {
+      webp.resize(416)
+    } else if (absolutePath.includes('images')) {
+      if (imgName.length > 6) {
+        webp.resize(636)
+      } else {
+        webp.resize(306)
+      }
+    }
+
+    webp.toFile(join(absolutePath, `${imgName}.webp`));
+  }
 }
