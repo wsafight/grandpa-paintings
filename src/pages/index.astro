@@ -1,0 +1,145 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// 导入 Image 组件和图像
+// import { Image } from "astro:assets";
+
+// import author from "../assets/author/image.png";
+
+// import honor1 from "../assets/certificate-of-honor/image.jpeg"
+
+// import image1 from "../assets/images/image1.jpg";
+// import image2 from "../assets/images/image2.jpg";
+// import image3 from "../assets/images/image3.jpg";
+// import image4 from "../assets/images/image4.jpg";
+
+// import image11 from "../assets/images/image11.jpg";
+// import image12 from "../assets/images/image12.jpg";
+// import image13 from "../assets/images/image13.jpg";
+// import image14 from "../assets/images/image14.jpg";
+---
+
+
+<Layout>
+  <div class="container">
+    <h1>倪士然一云林轩主</h1>
+
+    <main>
+      <div class="row align-items-start">
+        <div class="col-md-4">
+          <img src="/author/image.png" alt="author"  loading="lazy" decoding="async" />
+        </div>
+        <div class="col-md-8 font-main">
+          <h2 class="text-center font-kaiti">画家 倪士然简介</h2>
+          <p class="text-indent-2 font-kaiti">
+            倪士然号云林轩主，1949年9 月 29 日生于安徽淮南市。
+          </p>
+          <p class="text-indent-2 font-kaiti">
+            自幼酷爱中国传统书画艺术，1984
+            年函授于北京齐白石艺术函数学院，受教于齐良迟、李燕、黄鼎教授，得益良多，数年墨耕，不敢忘其宗旨。
+          </p>
+          <p>
+            <div class="row">
+              <div class="col-md-4">现为</div>
+              <div class="col-md-8">
+                <ul style="list-style: none;">
+                  <li>中国老年书画家协会会员</li>
+                  <li>安徽省老年书画联谊会会员</li>
+                  <li>安徽省淮北市美术家协会会员</li>
+                </ul>
+              </div>
+            </div>
+          </p>
+          <div class="row">
+            <div class="col-md-4">2019年11月</div>
+            <div class="col-md-8">
+              庆祝建国70周年庆展，全国首届当代翰墨名家一等奖
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">2019年9月</div>
+            <div class="col-md-8">全国万里行金秋展入展【百度画家倪士然】</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">2019年7月</div>
+            <div class="col-md-8">淮北美协70周年提名获奖展</div>
+          </div>
+
+          <p>近年省市刊物均有发表与获奖</p>
+          <p>QQ：&nbsp;&nbsp; 814596647</p>
+        </div>
+      </div>
+
+      <h2 class="space">荣誉证书</h2>
+      <div class="row">
+        <img src="/certificate-of-honor/image.jpeg" alt="author"  loading="lazy" decoding="async" />
+      </div>
+
+      <h2 class="space">作品</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/images/image1.jpg" alt="author"  loading="lazy" decoding="async" />
+        </div>
+        <div class="col-md-3">
+          <img src="/images/image2.jpg" alt="author"  loading="lazy" decoding="async" />
+        </div>
+        <div class="col-md-3">
+          <img src="/images/image3.jpg" alt="author"  loading="lazy" decoding="async" />
+          <!-- <Image src={image3} alt="author" /> -->
+        </div>
+        <div class="col-md-3">
+          <img src="/images/image4.jpg" alt="author"  loading="lazy" decoding="async" />
+          <!-- <Image src={image4} alt="author" /> -->
+        </div>
+      </div>
+      <div class="row space">
+        <div class="col-md-6">
+          <img src="/images/image11.jpg" alt="author"  loading="lazy" decoding="async" />
+          <!-- <Image src={image11} alt="author" /> -->
+        </div>
+        <div class="col-md-6">
+          <img src="/images/image12.jpg" alt="author"  loading="lazy" decoding="async" />
+          <!-- <Image src={image12} alt="author" /> -->
+        </div>
+      </div>
+
+      <div class="row space">
+        <div class="col-md-6">
+          <img src="/images/image13.jpg" alt="author"  loading="lazy" decoding="async" />
+          <!-- <Image src={image13} alt="author" /> -->
+        </div>
+        <div class="col-md-6">
+          <img src="/images/image14.jpg" alt="author"  loading="lazy" decoding="async" />
+          <!-- <Image src={image14} alt="author" /> -->
+        </div>
+      </div>
+
+    </main>
+  </div>
+</Layout>
+
+<style>
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .text-indent-2 {
+    text-indent: 2cap;
+  }
+  .font-kaiti {
+    font-family: "Times New Roman", STKaiti, KaiTi, "楷体", serif;
+    font-size: 26px;
+  }
+
+  .font-main {
+    font-size: 22px;
+  }
+
+  .space {
+    margin-top: 30px;
+  }
+
+</style>
